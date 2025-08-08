@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    color: rgb(28, 3, 94);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    width: 500px;
+    max-width: 90%;
+    height: 80vh;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: aliceblue;
+    margin-top:80px;
+    background-image: url(images/images.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 300px;
+    margin-right: 40px;
+}
+
+#city {
+    outline: 0;
+    height: 40px;
+    width: 300px;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 2.5rem;
+    background-color: transparent;
+    border: 3px solid rgba(247, 248, 249, 0.833);
+    border-radius: 2rem;
+    position: relative;
+    margin: 20px 0px;
+}
+
+#icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+#search {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1rem;
+    background-color: #2b2b90;
+    border: none;
+    border-radius: 2rem;
+    color: aliceblue;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.temp-city{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#temp{
+    font-size: 4rem;
+    font-weight: normal;
+}
+#cityname{
+    margin-top: 10px ;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+.details{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 100%;
+    margin-right: 20px;
+}
+.det{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+}
+.det img{
+   
+    width: 70px;
+    height: 70px;
+}
+#humidity,#windspeed{
+    font-size: 1.5rem;
+}
