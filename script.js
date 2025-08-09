@@ -1,7 +1,5 @@
-
-const apikey = process.env.API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric";
-async function WeatherDetails() {
+async function WeatherDetails(){
     const name = document.getElementById("city").value;
     try{
         const response = await fetch(apiUrl + `&q=${name}&appid=${apikey}`);
